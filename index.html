@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crawlspace Vapor Barrier Calculator — Poly Film, Seam Tape & Pins — Accurate Material Estimator</title>
+  <meta name="description" content="Calculate exact square footage of reinforced crawl space vapor barrier poly film, overlap waste, seam tape rolls, and foundation wall pins.">
+  <link rel="canonical" href="https://sebiglesias.com.ar/crawlspace-vapor-barrier-calculator/">
+  <meta name="theme-color" content="#0ea5e9">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Crawlspace Vapor Barrier Calculator — Poly Film, Seam Tape & Pins">
+  <meta property="og:description" content="Calculate exact square footage of reinforced crawl space vapor barrier poly film, overlap waste, seam tape rolls, and foundation wall pins.">
+  <meta property="og:url" content="https://sebiglesias.com.ar/crawlspace-vapor-barrier-calculator/">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BNDBQP0W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2BNDBQP0W7');
+  </script>
+
+  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-3381238987477190">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190" crossorigin="anonymous"></script>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Crawlspace Vapor Barrier Calculator \u2014 Poly Film, Seam Tape & Pins",
+    "url": "https://sebiglesias.com.ar/crawlspace-vapor-barrier-calculator/",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "description": "Calculate exact square footage of reinforced crawl space vapor barrier poly film, overlap waste, seam tape rolls, and foundation wall pins.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What thickness vapor barrier is recommended for a crawlspace?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Building science experts recommend at least a 10 mil to 12 mil virgin polyethylene reinforced barrier. Cheap 6 mil black plastic deteriorates within 3 to 5 years, tears easily when crawled upon, and emits odors. Premium full encapsulation jobs frequently use 20 mil reinforced barriers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How wide should vapor barrier seams overlap?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All seams between adjacent rolls must overlap by at least 12 inches (1 foot) and be continuously taped with heavy-duty 4-inch waterproof white seam tape. Never use standard duct tape, which loses adhesion in damp conditions within weeks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should a crawlspace vapor barrier go up the foundation walls?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Modern building codes (IRC Section R408.3) require vapor barriers to run at least 6 to 12 inches up exterior masonry walls (fastened with acoustic sealant and masonry pins), leaving a 3-inch gap below the sill plate for mandatory termite inspection."
+        }
+      }
+    ]
+  }
+]
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">🛡️ Building Science & Moisture Control</div>
+      <h1>Crawlspace Vapor Barrier & Encapsulation Calculator</h1>
+      <p class="subtitle">Calculate 10 mil to 20 mil polyethylene roll coverage, 12" seam overlaps, waterproof butyl tape, and wall fasteners.</p>
+    </header>
+
+    <!-- AdSense Top Banner -->
+    <div style="text-align:center; margin: 16px 0;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3381238987477190"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <main class="calc-grid">
+      <!-- Inputs Card -->
+      <form class="card" id="crawlspace-vapor-barrier-calculator-form" onsubmit="event.preventDefault();">
+        <h2>📐 Crawlspace Dimensions</h2>
+        
+        <div class="input-row">
+          <div class="form-group">
+            <label for="crawlLen">Length <span class="hint">Foundation exterior wall</span></label>
+            <div class="input-wrap">
+              <input type="number" id="crawlLen" step="1" min="10" value="40" required>
+              <span class="input-suffix">ft</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="crawlWid">Width <span class="hint">Foundation exterior wall</span></label>
+            <div class="input-wrap">
+              <input type="number" id="crawlWid" step="1" min="10" value="30" required>
+              <span class="input-suffix">ft</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="form-group">
+            <label for="wallWrapHgt">Wall Wrap Height</label>
+            <select id="wallWrapHgt">
+              <option value="6">6 Inches (Ground Cover Only)</option>
+              <option value="12" selected>12 Inches (Standard Code Coverage)</option>
+              <option value="24">24 Inches (Full Encapsulation / Stem Wall)</option>
+              <option value="36">36 Inches (Deep Crawlspace Encapsulation)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pierCount">Interior Support Piers</label>
+            <div class="input-wrap">
+              <input type="number" id="pierCount" step="1" min="0" max="30" value="6">
+              <span class="input-suffix">piers</span>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+      <!-- Results Card -->
+      <div class="card">
+        <h2>🎯 Encapsulation Materials</h2>
+        
+        <div class="result-hero">
+          <div class="result-label">Gross Vapor Barrier Needed (15% Overlap)</div>
+          <div class="result-number" id="grossSqFt">1,540</div>
+          <div class="result-label" style="color:#ffffff;">Square Feet of Poly Film</div>
+          <div style="font-size:0.95rem; color:#bae6fd; margin-top:6px;" id="rollsText">≈ 2 Rolls of 10ft × 100ft (1,000 sq ft rolls)</div>
+        </div>
+
+        <div class="sub-hero-grid">
+          <div class="sub-hero-col">
+            <div class="sub-hero-label">Waterproof Seam Tape</div>
+            <div class="sub-hero-val" id="tapeRolls">2 Rolls (180ft)</div>
+            <div class="sub-hero-sub">4" Double-coated or white seam tape</div>
+          </div>
+          <div class="sub-hero-col">
+            <div class="sub-hero-label">Wall Fastener Christmas Pins</div>
+            <div class="sub-hero-val" id="pinsCount">70 Pins</div>
+            <div class="sub-hero-sub">Spaced every 24" along wall</div>
+          </div>
+        </div>
+
+        <div class="specs-grid">
+          <div class="spec-item">
+            <div class="spec-desc">Bare Dirt Floor Area</div>
+            <div class="spec-val" id="floorArea">1,200 sq ft</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-desc">Stem Wall Wrap Area</div>
+            <div class="spec-val" id="wallArea">140 sq ft</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-desc">Support Pier Wrap</div>
+            <div class="spec-val" id="pierArea">96 sq ft</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-desc">Recommended Thickness</div>
+            <div class="spec-val" style="color:#38bdf8;">10 Mil or 12 Mil Reinforced</div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Amazon Supplies Box -->
+    <section class="supplies-card">
+      <h3>🛠️ Recommended Tools, Hardware & Building Supplies</h3>
+      <div class="supplies-grid">
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Viper CS 10 Mil Reinforced Crawlspace Vapor Barrier (1,000 sq ft)</div>
+            <div class="supply-desc">Virgin polyolefin resin barrier with high puncture resistance that prevents soil gas and water vapor transmission.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=10+mil+crawlspace+vapor+barrier+roll&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">Check on Amazon →</a>
+        </div>
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">White Crawlspace Seam Tape (4" x 180ft Waterproof Acrylic)</div>
+            <div class="supply-desc">High-tack polyethylene film tape for sealing overlapping 12-inch vapor barrier seams airtight.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=crawlspace+vapor+barrier+seam+tape+white&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">Check on Amazon →</a>
+        </div>
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Christmas Tree Vapor Barrier Foundation Wall Fastener Pins</div>
+            <div class="supply-desc">High-strength nylon expansion pins for securing vapor barrier film to masonry block foundation walls.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=crawlspace+vapor+barrier+pins+fasteners&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">Check on Amazon →</a>
+        </div>
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">ALORAIR Commercial 120 PPD Crawlspace Dehumidifier with Pump</div>
+            <div class="supply-desc">Energy Star high-efficiency crawlspace dehumidifier with automatic drainage and digital humidistat.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=alorair+crawlspace+dehumidifier+pump&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">Check on Amazon →</a>
+        </div>
+      </div>
+      <p style="font-size:0.75rem; color:#94a3b8; margin-top:14px; margin-bottom:0; text-align:center;">
+        ⚖️ <em>Affiliate Notice: As an Amazon Associate, this site earns from qualifying purchases at no additional cost to you. We strictly link to trade-grade construction tools, hardware, and safety materials.</em>
+      </p>
+    </section>
+
+    <!-- FAQ Section for SEO -->
+    <section class="faq-section">
+      <h2 style="font-size:1.35rem; color:#ffffff; margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <div class="faq-q">What thickness vapor barrier is recommended for a crawlspace?</div>
+        <div class="faq-a">Building science experts recommend at least a 10 mil to 12 mil virgin polyethylene reinforced barrier. Cheap 6 mil black plastic deteriorates within 3 to 5 years, tears easily when crawled upon, and emits odors. Premium full encapsulation jobs frequently use 20 mil reinforced barriers.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How wide should vapor barrier seams overlap?</div>
+        <div class="faq-a">All seams between adjacent rolls must overlap by at least 12 inches (1 foot) and be continuously taped with heavy-duty 4-inch waterproof white seam tape. Never use standard duct tape, which loses adhesion in damp conditions within weeks.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Should a crawlspace vapor barrier go up the foundation walls?</div>
+        <div class="faq-a">Yes. Modern building codes (IRC Section R408.3) require vapor barriers to run at least 6 to 12 inches up exterior masonry walls (fastened with acoustic sealant and masonry pins), leaving a 3-inch gap below the sill plate for mandatory termite inspection.</div>
+      </div>
+    </section>
+
+    <!-- Bottom AdSense Banner -->
+    <div style="text-align:center; margin: 32px 0;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3381238987477190"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <footer>
+      <p>© 2026 <a href="https://sebiglesias.com.ar/">sebiglesias.com.ar</a> · Crawlspace Vapor Barrier Calculator — Poly Film, Seam Tape & Pins. Educational and trade reference tool.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
